@@ -138,7 +138,11 @@ async def main_loop():
         tasks = set()
         stack.push_async_callback(cancel_tasks, tasks)
 
-        client = Client(os.getenv("MQTT"))
+        client = Client(
+             os.getenv("MQTT"),
+             username=os.getenv("MOSQUITTO_USERNAME"),
+             password=os.getenv("MOSQUITTO_PASSWORD")
+        )
         await stack.enter_async_context(client)
 
         messages = await stack.enter_async_context(client.unfiltered_messages())
