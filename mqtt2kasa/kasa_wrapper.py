@@ -5,7 +5,7 @@ from typing import Optional
 
 from asyncio_throttle import Throttler
 from kasa import Discover
-from kasa.smartdevice import SmartDevice, SmartDeviceException
+from kasa.smart.smartdevice import SmartDevice, SmartDeviceException
 
 from mqtt2kasa import log
 from mqtt2kasa.config import Cfg

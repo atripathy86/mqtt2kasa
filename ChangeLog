@@ -1,4 +1,15 @@
 CHANGES
 =======
 
+* Client use MOSQUITTO\_USERNAME, MOSQUITTO\_PASSWORD from environment
+* build update
+* build update
+* tweaks for docker
+* removed syslog
+* Added a Dockerfile
+* add: kitchen-clock
+* Sync up with https://github.com/clmcavaney/mqtt2kasa
+* Make it python 3.7 compatible
+* Add toggle support and better tests
+* Trivial: New device to flaviof config and strictyaml to TODO
 * first commit
