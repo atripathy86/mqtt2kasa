@@ -146,7 +146,7 @@ async def main_loop():
         )
         await stack.enter_async_context(client)
 
-        messages = await stack.enter_async_context(client.unfiltered_messages())
+        messages = client.messages()
         task = asyncio.create_task(handle_mqtt_messages(messages, main_events_q))
         tasks.add(task)
 
