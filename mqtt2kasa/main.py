@@ -4,7 +4,8 @@ import os
 import collections
 from contextlib import AsyncExitStack
 
-from asyncio_mqtt import Client, MqttError
+#from asyncio_mqtt import Client, MqttError
+from aiomqtt import Client, MqttError
 
 from mqtt2kasa import log
 from mqtt2kasa.config import Cfg

@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* Change in SmartDevice location to python-kasa.smart.smartdevice
 * Client use MOSQUITTO\_USERNAME, MOSQUITTO\_PASSWORD from environment
 * build update
 * build update
